@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>college diaries of a CS student</title>
+        <link href="https://fonts.cdnfonts.com/css/jacques-francois" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body>
+        <header>
+            <div class="logo"> Vibha Guru </div>
+            
+            <nav class="nav-bar">
+                <ul>
+                    <li> <a href="#welcome"> home </a> </li>
+                    <li> <a href="#projects"> projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <h1 id="title"> hi! i'm vibha </h1>
+
+        <h2 id="welcome" class="active"> welcome!</h2>
+
+       
+        <p id="autoType"></p>
+
+
+        <h2 id="projects"> projects </h2>
+        <div id="button-section">
+            <button class="filter-button active" onclick= "filterObjects('all')" >all</button>
+            <button class= "filter-button" onclick= "filterObjects('flask')" >flask/databse </button>
+            <button class= "filter-button" onclick="filterObjects('webdev')" > web dev </button>
+        </div>
+        <div class="container">
+            <div class="each-project webdev"> 
+                <h3> personal page </h3>
+                <p class="projectDescription">This website you’re currently on was built using HTML/CSS/JS to host my projects and contact information. </p>
+                <p class="tech"> html css js</p>
+            </div>
+            <div class="each-project flask">
+                <h3>stock ticker</h3>
+                <p class="projectDescription">Developed a real-time stock ticker information web application using Flask, Yahoo Finance API, and PostgreSQL</p>
+                <p class="tech"> html css flask postresql</p>
+            </div>
+            <div class="each-project flask">
+                <h3>everyday journal</h3> 
+                <p class="projectDescription"> Currently, developing a journal web application with built in timer and prompts. </p>
+                <p class="tech"> html css flask postgresql</p>
+            </div>
+        </div>
+       
+
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script type="text/javascript" src="myapp.js"></script>
+        
+    </body>
+
+   
+</html>
